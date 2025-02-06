@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kælenavn Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="script.js"></script>
+</head> 
+
+<body>
+    <h1>Kælenavn Generator</h1>
+
+    <button id="generate">Generér kælenavn</button>
+    <p id="nickname">Tryk på knappen for at få et kælenavn!</p>
+
+    <!-- Her indsætter vi SVG som et objekt -->
+    <object type="image/svg+xml" data="heart-svgrepo-com.svg" width="100" height="100">Hjerte</object>
+
+    <!-- 📌 Service Worker scriptet skal ligge her lige før </body> -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("✅ Service Worker registreret!"))
+                .catch(err => console.log("❌ Service Worker fejlede:", err));
+        }
+    </script>
+</body>
+</html>
