@@ -1,6 +1,6 @@
 // Arrays med navne-dele 
 const firstPart = [
-    "Skatte", "Fnuller", "Putte", "Guld", "Musse", "Snuske", "Mælke", "Jelly", "Cookie", "Buller", "Kramme", "Prutte", "Misse", "Stjerne", "Tosse", "Grine", "Puller", "Sveske", "Mulle", "Tulle", "Smukke", "Sukker", "Lækker", "Sol", "Prinsesse", "Elske", "Charme", "Honning", "Nusse", "Skum-", "Mini", "Prinse", "Sommer", "Puslinge", "Nuller", "Bølle", "Muller", "Pjuske", "Plysser", "Tutte", "Smør", "Fjolle", "Glitter", "Snurre", "Bobbel", "Plys", "Bamse", "Glimmer", "Snuller", "Fluffe", "Lulle", "Nutte", "Pludre", "Kuller", "Muffin"
+    "Skatte", "Fnuller", "Putte", "Guld", "Musse", "Snuske", "Mælke", "Jelly", "Cookie", "Buller", "Kramme", "Prutte", "Misse", "Stjerne", "Tosse", "Grine", "Puller", "Sveske", "Mulle", "Tulle", "Smukke", "Sukker", "Lækker", "Sol", "Prinsesse", "Elske", "Charme", "Honning", "Nusse", "Skum", "Mini", "Prinse", "Sommer", "Puslinge", "Nuller", "Bølle", "Muller", "Pjuske", "Plysser", "Tutte", "Smør", "Fjolle", "Glitter", "Snurre", "Bobbel", "Plys", "Bamse", "Glimmer", "Snuller", "Fluffe", "Lulle", "Nutte", "Pludre", "Kuller", "Muffin"
 ];
 
 const secondPart = [
@@ -11,7 +11,7 @@ const secondPart = [
 function generateNickname() {
     const randomFirst = firstPart[Math.floor(Math.random() * firstPart.length)];
     const randomSecond = secondPart[Math.floor(Math.random() * secondPart.length)];
-    document.getElementById("nickname").innerText = randomFirst + randomSecond;  // Sammenføje uden mellemrum
+    document.getElementById("nickname").innerText = randomFirst + randomSecond; // Sammenføje uden mellemrum
 }
 
 // Håndter knap klik
