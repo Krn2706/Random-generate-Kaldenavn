@@ -1,17 +1,17 @@
 // Arrays med navne-dele 
 const firstPart = [
- "Skatte", "Fnuller", "Putte", "Guld", "Musse", "Snuske", "Mælke", "Jelly", "Cookie", "Buller", "Kramme", "Prutte", "Misse", "Stjerne", "Tosse", "Grine", "Puller", "Sveske", "Mulle", "Tulle", "Smukke", "Sukker", "Lækker", "Sol", "Prinsesse", "Elske", "Charme", "Honning", "Nusse", "Skum-", "Mini", "Prinse", "Sommer", "Puslinge", "Nuller", "Bølle", "Muller", "Pjuske", "Plysser", "Tutte", "Smør", "Fjolle", "Glitter", "Snurre", "Bobbel", "Plys", "Bamse", "Glimmer", "Snuller", "Fluffe", "Lulle", "Nutte", "Pludre"
+    "Skatte", "Fnuller", "Putte", "Guld", "Musse", "Snuske", "Mælke", "Jelly", "Cookie", "Buller", "Kramme", "Prutte", "Misse", "Stjerne", "Tosse", "Grine", "Puller", "Sveske", "Mulle", "Tulle", "Smukke", "Sukker", "Lækker", "Sol", "Prinsesse", "Elske", "Charme", "Honning", "Nusse", "Skum-", "Mini", "Prinse", "Sommer", "Puslinge", "Nuller", "Bølle", "Muller", "Pjuske", "Plysser", "Tutte", "Smør", "Fjolle", "Glitter", "Snurre", "Bobbel", "Plys", "Bamse", "Glimmer", "Snuller", "Fluffe", "Lulle", "Nutte", "Pludre"
 ];
 
 const secondPart = [
-  "mus", "gøj", "tøs", "bamse", "-fis", "mis", "bøtte", "bean", "monster", "mås", "bjørn", "klump", "top", "dyr", "kat", "lys", "-tosse", "fyr", "dukke", "bisken", "trold", "sikke", "-futmælk", "-ling", "kage", "fidus", "-bar", "panda", "-muuh", "fugl", "boble", "blomst", "stjerne", "fisk", "gøjl", "stråle", "-my", "fnug", "sky", "fe", "ælling", "hvalp", "tumling", "-smølf", "perle", "pjusk", "drys", "-putling", "-puff", "-mulle", "-blomst", "-muller", "-buller", "-bølle", "-bøf". "trunte", "basse", 
+    "mus", "gøj", "tøs", "bamse", "-fis", "mis", "bøtte", "bean", "monster", "mås", "bjørn", "klump", "top", "dyr", "kat", "lys", "-tosse", "fyr", "dukke", "bisken", "trold", "sikke", "-futmælk", "-ling", "kage", "fidus", "-bar", "panda", "-muuh", "fugl", "boble", "blomst", "stjerne", "fisk", "gøjl", "stråle", "-my", "fnug", "sky", "fe", "ælling", "hvalp", "tumling", "-smølf", "perle", "pjusk", "drys", "-putling", "-puff", "-mulle", "-blomst", "-muller", "-buller", "-bølle", "-bøf", "trunte", "basse"
 ];
 
 // Funktion til at generere et tilfældigt kælenavn
 function generateNickname() {
-  const randomFirst = firstPart[Math.floor(Math.random() * firstPart.length)];
-  const randomSecond = secondPart[Math.floor(Math.random() * secondPart.length)];
-  document.getElementById("nickname").innerText = randomFirst + randomSecond;  // Sammenføje uden mellemrum
+    const randomFirst = firstPart[Math.floor(Math.random() * firstPart.length)];
+    const randomSecond = secondPart[Math.floor(Math.random() * secondPart.length)];
+    document.getElementById("nickname").innerText = randomFirst + randomSecond;  // Sammenføje uden mellemrum
 }
 
 // Håndter knap klik
